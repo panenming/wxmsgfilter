@@ -263,11 +263,10 @@ public class WechatApiUtil {
 
     /**
      * 添加好友
-     *
+     * @param meta
      * @param userName
-     * @param status        2,default=2
      * @param verifyContent
-     * @param autoUpdate
+     * @return
      */
     public static JSONObject addFriend(WechatMeta meta, String userName, String verifyContent) {
         String url = "{0}/webwxverifyuser?r={1}&pass_ticket={2}";
